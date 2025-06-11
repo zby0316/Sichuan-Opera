@@ -71,7 +71,7 @@
     <!-- 英雄区 -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="images/川剧×游戏/游戏.jpg" alt="川剧与游戏结合的艺术展示" class="w-full h-full object-cover">
+            <img src="川剧×游戏/游戏.jpg" alt="川剧与游戏结合的艺术展示" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/70 to-dark/50"></div>
         </div>
         
@@ -104,7 +104,7 @@
                 <!-- 案例1：王者荣耀 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
                     <div class="relative h-64">
-                        <img src="images/川剧×游戏/上官婉儿.jpg" alt="王者荣耀上官婉儿" class="w-full h-full object-cover">
+                        <img src="川剧×游戏/上官婉儿.jpg" alt="王者荣耀上官婉儿" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent flex items-end">
                             <h3 class="text-white text-xl font-medium p-6">《王者荣耀》× 变脸英雄</h3>
                         </div>
@@ -123,7 +123,7 @@
                 <!-- 案例2：绘真·妙笔千山 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
                     <div class="relative h-64">
-                        <img src="images/川剧×游戏/妙笔千山.jpg" alt="绘真·妙笔千山" class="w-full h-full object-cover">
+                        <img src="川剧×游戏/妙笔千山.jpg" alt="绘真·妙笔千山" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent flex items-end">
                             <h3 class="text-white text-xl font-medium p-6">《绘真·妙笔千山》</h3>
                         </div>
@@ -142,7 +142,7 @@
                 <!-- 案例3：仙剑奇侠传六 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
                     <div class="relative h-64">
-                        <img src="images/川剧×游戏/仙剑奇侠传6.jpg" alt="仙剑奇侠传六" class="w-full h-full object-cover">
+                        <img src="川剧×游戏/仙剑奇侠传6.jpg" alt="仙剑奇侠传六" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent flex items-end">
                             <h3 class="text-white text-xl font-medium p-6">《仙剑奇侠传六》</h3>
                         </div>
@@ -161,7 +161,7 @@
                 <!-- 案例4：三国杀 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
                     <div class="relative h-64">
-                        <img src="images/川剧×游戏/张任.jpg" alt="三国杀张任皮肤" class="w-full h-full object-cover">
+                        <img src="川剧×游戏/张任.jpg" alt="三国杀张任皮肤" class="w-full h-full object-cover">
                         </div>
                     <div class="p-6">
                         <p class="text-dark mb-4">
@@ -177,7 +177,7 @@
                 <!-- 案例5：太吾绘卷 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
                     <div class="relative h-64">
-                        <img src="images/川剧×游戏/太吾绘卷.jpg" alt="太吾绘卷梨园系统" class="w-full h-full object-cover">
+                        <img src="川剧×游戏/太吾绘卷.jpg" alt="太吾绘卷梨园系统" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent flex items-end">
                             <h3 class="text-white text-xl font-medium p-6">《太吾绘卷》</h3>
                         </div>
@@ -196,7 +196,7 @@
                 <!-- 案例6：虚拟变脸游戏 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
                     <div class="relative h-64">
-                        <img src="images/川剧×游戏/互动.jpg" alt="虚拟变脸游戏" class="w-full h-full object-cover">
+                        <img src="川剧×游戏/互动.jpg" alt="虚拟变脸游戏" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent flex items-end">
                             <h3 class="text-white text-xl font-medium p-6">虚拟变脸互动体验</h3>
                         </div>
@@ -268,7 +268,7 @@
                         <p class="text-accent font-medium">—— 四川大学非物质文化遗产研究中心 李教授</p>
                     </div>
                     <div class="relative">
-                        <img src="images/川剧×游戏/教授.jpg" alt="专家访谈" class="w-full h-auto rounded-lg shadow-xl">
+                        <img src="川剧×游戏/教授.jpg" alt="专家访谈" class="w-full h-auto rounded-lg shadow-xl">
                         <div class="absolute -bottom-4 -right-4 bg-accent text-dark px-4 py-2 rounded-lg shadow-lg">
                         </div>
                     </div>
@@ -312,8 +312,7 @@
         
         // 图片懒加载
         if ('loading' in HTMLImageElement.prototype) {
-            const images = document.querySelectorAll('img[loading="lazy"]');
-            images.forEach(img => {
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
                 img.src = img.dataset.src;
             });
         } else {
