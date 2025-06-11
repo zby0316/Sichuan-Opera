@@ -788,8 +788,7 @@
         
         // 图片懒加载
         if ('loading' in HTMLImageElement.prototype) {
-            const images = document.querySelectorAll('img[loading="lazy"]');
-            images.forEach(img => {
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
                 img.src = img.dataset.src;
             });
         } else {
